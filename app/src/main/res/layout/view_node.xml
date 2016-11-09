@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    android:layout_height="match_parent">
+
+    <LinearLayout  android:focusable="true" android:layout_width="fill_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/light"
+        android:focusableInTouchMode="true">
+        <LinearLayout
+            android:background="@color/purpple"
+            android:layout_width="fill_parent" android:layout_height="40dip" android:layout_marginRight="0dp" android:layout_marginBottom="1dip" android:gravity="center_vertical" android:focusable="false"
+            android:layout_marginTop="1dip">
+            <TextView android:id="@+id/tittle" android:textSize="17.0dip" android:typeface="sans"  android:textStyle="bold" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="16 AUG 2001" android:layout_weight="1" android:layout_gravity="center" android:layout_marginLeft="8dip"
+                android:textIsSelectable="false" android:focusable="false"/>
+            <TextView android:id="@+id/date" android:textSize="17.0dip" android:typeface="sans"  android:textStyle="bold" android:textColor="#fafafa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20:11" android:layout_gravity="center" android:layout_marginLeft="8dip" android:layout_marginRight="8dip"
+                android:textIsSelectable="false" android:focusable="false"
+                />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="1dip" android:background="#faf9f9" android:focusable="false"/>
+        <TextView
+            android:background="@color/light"
+            android:scrollbarStyle="outsideOverlay" android:autoLink="all" android:capitalize="sentences"
+            android:text="123"  android:minLines="1" android:id="@+id/data" android:layout_width="match_parent"
+            android:layout_marginLeft="20dp" android:layout_marginRight="25dip" android:layout_marginTop="3dip" android:layout_marginBottom="28dip" android:clickable="true"
+            android:typeface="sans" android:visibility="visible" android:focusable="false"
+            android:linksClickable="true"
+            style="@style/AppTheme"
+            android:textSize="30dp"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="false" android:longClickable="true"
+            android:enabled="true"
+            android:fontFamily="casual" />
+    </LinearLayout>
+</RelativeLayout>

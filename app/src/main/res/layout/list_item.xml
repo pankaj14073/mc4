@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@id/list_item"
+    android:padding="5dip" android:measureWithLargestChild="false"
+    android:clickable="true" android:focusable="true"
+    >
+    <LinearLayout  android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@color/light"
+        android:focusableInTouchMode="true">
+        <LinearLayout
+            android:background="@color/purpple"
+            android:layout_width="fill_parent" android:layout_height="40dip" android:layout_marginRight="0dp" android:layout_marginBottom="1dip" android:gravity="center_vertical" android:focusable="false"
+            android:layout_marginTop="1dip">
+            <TextView android:id="@+id/tittle" android:textSize="17.0dip" android:typeface="sans"  android:textStyle="bold" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="16 AUG 2001" android:layout_weight="1" android:layout_gravity="center" android:layout_marginLeft="8dip"
+                android:textIsSelectable="false" android:focusable="false"/>
+            <TextView android:id="@+id/date" android:textSize="17.0dip" android:typeface="sans"  android:textStyle="bold" android:textColor="#fafafa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20:11" android:layout_gravity="center" android:layout_marginLeft="8dip" android:layout_marginRight="8dip"
+                android:textIsSelectable="false" android:focusable="false"
+                />
+            <ImageView android:id="@+id/menu_delete" android:layout_width="37dip" android:layout_height="37dip" android:src="@mipmap/ic_delete" android:contentDescription="Delete"
+                android:clickable="true" android:layout_marginLeft="2dip" android:layout_marginRight="3dip"
+                android:visibility="visible"/>
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="1dip" android:background="#faf9f9" android:focusable="false"/>
+        <TextView
+            android:background="@color/light"
+            android:scrollbarStyle="outsideOverlay" android:autoLink="all" android:capitalize="sentences"
+            android:text="123"  android:minLines="1" android:id="@+id/data" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" android:layout_marginRight="25dip" android:layout_marginTop="3dip" android:layout_marginBottom="28dip" android:clickable="true"
+            android:typeface="sans" android:visibility="visible" android:focusable="false"
+            android:linksClickable="true"
+            style="@style/AppTheme"
+            android:textSize="30dp"
+            android:focusableInTouchMode="false" android:longClickable="true"
+            android:enabled="true"
+            android:fontFamily="casual" />
+    </LinearLayout>
+
+</LinearLayout>
